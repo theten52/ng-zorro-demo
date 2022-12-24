@@ -11,11 +11,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-import { NgZorroModule } from './ngzorro.module';
-import { LoginRoutingModule } from './login/login-routing.module';
 import { LoginComponent } from './login/login.component';
 
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzMessageModule } from 'ng-zorro-antd/message';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 registerLocaleData(en);
 
@@ -29,10 +33,24 @@ registerLocaleData(en);
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgZorroModule,
-    LoginRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzButtonModule,
+    NzDividerModule,
+    NzFormModule,
+    NzInputModule,
+    NzMenuModule,
+    NzMessageModule,
+    NzTableModule,
+  ],
+  exports: [
+    NzButtonModule,
+    NzDividerModule,
+    NzFormModule,
+    NzInputModule,
+    NzMenuModule,
+    NzMessageModule,
+    NzTableModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
