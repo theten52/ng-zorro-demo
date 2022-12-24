@@ -10,10 +10,11 @@ import en from '@angular/common/locales/en';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { LoginComponent } from './login/login.component';
 
 
 import { NgZorroModule } from './ngzorro.module';
+import { LoginRoutingModule } from './login/login-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 registerLocaleData(en);
@@ -21,7 +22,7 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    // LoginComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +30,7 @@ registerLocaleData(en);
     FormsModule,
     ReactiveFormsModule,
     NgZorroModule,
+    LoginRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
