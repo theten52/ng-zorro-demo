@@ -1,6 +1,8 @@
 # NgZorroDemo
 
-这个项目是一个 nz-zorro 的demo。重点是官方文档中使用的命令执行后出现的问题的解决。
+这个项目是一个 ng-zorro-antd 的demo。重点是官方文档中使用的命令执行后出现的问题的解决。
+
+官方文档地址： https://ng.ant.design/docs/schematics/zh
 
 使用的版本信息为：
 ```
